@@ -1,0 +1,153 @@
+/* Globales*/
+* {
+    font-family: "Oswald", sans-serif; /* Cambia "Oswald" a la fuente que prefieras */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cfcfcf;
+}
+
+
+header {
+    background-color: #45075b;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px; /* Ajusta el tamaño de letra según tus necesidades */
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+/* letras cineverse animadas*/
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+    background: linear-gradient(to right, #00ccff, #cc00ff, #06ef34);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: color-change 5s infinite alternate;
+}
+
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a,
+header a { /* Agrega el selector header a */
+    color: white;
+    transition: color 0.3s; /* Añadimos transición de color */
+}
+
+nav ul li a:hover,
+header a:hover { /* Agrega el selector header a:hover */
+    text-decoration: none; 
+    color: #acff07; /* Cambia el color al pasar el ratón */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    color: #8B0000;
+}
+
+
+
+#cartelera .carousel-item img {
+    height: 480;
+    /* Estilos específicos para las imágenes dentro del carrusel con ID "cartelera" */
+}
+
+.carousel-item img {
+    height: 450px; /* Ajusta la altura según tus necesidades */
+    /*width: 100px;*/
+
+}
+
+/*pagina cartelera*/
+
+/* parte de carrruseles*/
+.text-galactic {
+    font-family: "Oswald", sans-serif; /* Usa la fuente Oswald o una fuente similar */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    color: #590864; /* Color de texto blanco */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra de texto */
+    transition: color 0.3s; /* Transición de color */
+    padding: 0;
+    
+}
+
+.text-galactic:hover {
+    color: #7300ff; /* Cambia el color al pasar el mouse */
+}
+
+
+/*boton*/
+.btn-galactic {
+    background-color: #8860D0;
+    border-color: #8860D0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.btn-galactic:hover {
+    background-color: #AB8CEC;
+    border-color: #AB8CEC;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*PARTE DE ENTRADAS*/
+/* Estilos para las imágenes */
+/* Estilos para las imágenes */
+/* Estilos para las imágenes */
+/* Estilos para las imágenes */
+.img-fluid {
+    width: 200px; /* Tamaño fijo para el ancho */
+    height: 300px; /* Tamaño fijo para la altura */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente las imágenes */
+    transition: transform 0.3s ease; /* Transición para el efecto de resaltado */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor */
+}
+
+
+
+
+/* Estilos para el efecto de resaltado */
+.img-fluid:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el ratón por encima */
+}
+
+/* Ajuste de tamaño para dispositivos pequeños */
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 80%;
+    }
+}
+

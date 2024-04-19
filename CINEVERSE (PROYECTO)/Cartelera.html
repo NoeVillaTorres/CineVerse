@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineverse - Cartelera</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="header-link"><h1>CineVerse</h1></a>
+        </div>
+    </header>
+    
+   <!-- Primer carrusel (en cartelera) -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div>
+                <h2 class="text-center mb-4 text-galactic">En Cartelera</h2>
+
+                <div id="carouselEnCartelera" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/En cartelera/c1.jpg" class="d-block w-100" alt="Película 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/En cartelera/c2.jpg" class="d-block w-100" alt="Película 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/En cartelera/c3.webp" class="d-block w-100" alt="Película 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!--Boton de ver boletos !-->
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <a href="#" class="btn btn-galactic btn-lg rounded-pill px-4 py-2">Ver Boletos</a>
+                </div>
+            </div>
+            
+
+             <!-- Segundo carrusel (Proximos estrenos) -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div>
+                <h2 class="text-center mb-4 text-galactic">Próximos Estrenos</h2>
+
+                <div id="carouselProximosEstrenos" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/Proximos estrenos/p1.jpeg" class="d-block w-100" alt="Próximo Estreno 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/Proximos estrenos/p2.jpg" class="d-block w-100" alt="Próximo Estreno 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/Proximos estrenos/p3.jpg" class="d-block w-100" alt="Próximo Estreno 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
